@@ -1,5 +1,9 @@
+body {
+  background-color: darkcyan;
+}
 .Board {
   display: grid;
-  /* grid-template-columns: repeat(3, auto); */
   grid-template-rows: auto;
+  margin: 10px;
+  column-gap: 20px;
 }

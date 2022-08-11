@@ -1,3 +1,26 @@
 .Column {
-  height: 100vh;
+  width: 100%;
+  margin: 10px;
+  background: #ebecf0;
+  border-radius: 10px;
+}
+
+.Column-ListContiner {
+  margin: 10px;
+
+  /* Remove default styles */
+  list-style-type: initial;
+  padding: initial;
+}
+
+.Column-ListItem {
+  display: block;
+  height: 55px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffffcc;
+}
+
+.Column-ListItem:not(:first-child) {
+  margin-top: 10px;
 }
