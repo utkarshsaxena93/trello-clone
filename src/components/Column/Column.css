@@ -3,10 +3,13 @@
   margin: 10px;
   background: #ebecf0;
   border-radius: 10px;
+  min-height: 100vh;
+  min-width: 250px;
 }
 
 .Column-ListContiner {
   margin: 10px;
+  height: 100%;
 
   /* Remove default styles */
   list-style-type: initial;
@@ -17,10 +20,16 @@
   display: block;
   height: 55px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #ffffffcc;
+  box-shadow: 0 1px 0 #091e4240;
+  cursor: pointer;
 }
 
 .Column-ListItem:not(:first-child) {
   margin-top: 10px;
+}
+
+.Column-ListItemDragging {
+  opacity: 0.45;
 }

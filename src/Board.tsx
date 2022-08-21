@@ -8,7 +8,9 @@ const NUMBER_OF_COLUMNS = 5;
 function Board() {
   const columnMarkup = useMemo(() => {
     return new Array(NUMBER_OF_COLUMNS).fill(true).map((_, index) => {
-      return <Column items={new Array(getRandomInt(5, 10)).fill(true)} />;
+      return (
+        <Column key={index} items={new Array(getRandomInt(5, 10)).fill(true)} />
+      );
     });
   }, []);
 
